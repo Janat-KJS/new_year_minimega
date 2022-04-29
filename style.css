@@ -1,0 +1,165 @@
+body{
+	background: #E5E5E5;
+}
+
+
+.container{
+	background-color: #1A5B35;
+	width: 405px;
+	height: 783px;
+	margin: 0 auto;
+}
+
+.top__items{
+	display: flex;
+	justify-content: space-between;
+}
+
+.top__clock{
+	color: white;
+	font-size: 17px;
+	font-family: 'Arial';
+	padding: 0px 17px;
+}
+
+.top__displays{
+	background: url(Img/display.svg) no-repeat;
+	width: 115px;
+	height: 25px;
+	background-size: 90px;
+	position: relative;
+    top: 12px;
+    left: 14px;
+}	
+
+.item_flex{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+
+}
+
+.flex-item1{
+	height: 153px;
+	width: 90px;
+	background: url(Img/Group1.svg) no-repeat;
+	background-size: 100px;
+	position: relative;
+	bottom: 46px;
+	left: 0;
+}
+
+.flex-item2{
+	height: 50px;
+	width: 84px;
+	text-align: center;
+	color: white;
+	position: relative;
+	bottom: 172px;
+	left: 297px;
+	font-size: 13px;
+	font-family: 'Arial';
+}
+
+.flex-item3{
+	height: 52px;
+	width: 52px;
+	background: url(Img/Group5.svg) no-repeat;
+	position: relative;
+	bottom: 172px;
+	left: 316px;
+	background-size: 48px;
+	animation: downUp 0.9s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+}
+
+@keyframes downUp {
+	from {
+		transform: translateY(-10px);
+	}
+
+	to {
+		transform: translateY(5px);
+	}
+}
+
+
+.flex-item4{
+	height: 77px;
+	width: 360px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+	font-family: 'Marck Script';
+	position: relative;
+	bottom: 164px;
+	color: #CEB076;
+	font-size: 40px;
+}
+
+.flex-item5{
+	height: 447px;
+	width: 408px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 16px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	bottom: 163px;
+	color: #dbd8d8;
+	font-weight: 15px;
+}
+.mega{
+	color: white;
+}
+
+.flex-item6{
+	height: 95px;
+	width: 100px;
+	background: url(Img/Group3.svg) no-repeat;
+	position: relative;
+	bottom: 235px;
+	left: 282px;
+}
+
+.flex-item7{
+	background: url(Img/Group4.svg) no-repeat;
+	height: 57px;
+	width: 120px;
+	position: relative;
+	bottom: 220px;
+	left: 145px;
+	background-size: 115px;
+	
+}
+
+
+@media print{
+	.container{
+		width: 100%;
+		background-color: blue;
+	}
+	.flex-item1{
+		display: none;
+	}
+	.flex-item2{
+		display: none;
+	}
+	.flex-item3{
+		display: none;
+	}
+	.flex-item4{
+		color: black;
+	}
+	.flex-item5{
+		color: black;
+	}
+	.flex-item6{
+		display: none;
+	}
+	.flex-item7{
+		display: none;
+	}
+}
